@@ -1,6 +1,6 @@
 // import { StatusBar } from "expo-status-bar"
 import { useState } from "react"
-import { SafeAreaView, ScrollView, View } from "react-native"
+import { SafeAreaView, ScrollView } from "react-native"
 import { CreditCardOption } from "./src/components/CreditCardOption"
 import { Divider } from "./src/components/Divider"
 import { FindOutMore } from "./src/components/FindOutMore"
@@ -19,6 +19,7 @@ export default function App() {
   return (
     <>
       <MyStatusBar backgroundColor={theme.primary} />
+
       <SafeAreaView style={{ backgroundColor: "white" }}>
         <ScrollView style={{ backgroundColor: theme.primary }}>
           <Header

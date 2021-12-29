@@ -7,6 +7,7 @@ import {
 } from "@expo/vector-icons"
 import { Text, TouchableWithoutFeedback, View } from "react-native"
 import { theme } from "../styles/theme"
+import { RowView } from "./RowView"
 
 interface IProps {
   isVisible: boolean
@@ -16,12 +17,9 @@ interface IProps {
 export const Header = ({ isVisible, toggleVisible }: IProps): JSX.Element => {
   return (
     <View style={{ backgroundColor: theme.primary }}>
-      <View
+      <RowView
         style={{
-          flexDirection: "row",
-          justifyContent: "space-between",
           paddingHorizontal: 16,
-          alignItems: "center",
         }}
       >
         <View
@@ -55,7 +53,8 @@ export const Header = ({ isVisible, toggleVisible }: IProps): JSX.Element => {
             style={{ marginLeft: 24 }}
           />
         </View>
-      </View>
+      </RowView>
+
       <Text
         style={{
           fontSize: 24,
